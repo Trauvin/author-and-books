@@ -1,8 +1,10 @@
 body,
 h1,
 p,
-div h2,
-ul {
+div,
+h2,
+ul,
+section {
   margin: 0;
   padding: 0px;
 }
@@ -22,13 +24,6 @@ img {
   width: 300px;
   height: 300px;
   border: 4px solid #000;
-}
-
-h1 {
-  font-size: 3em;
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  text-align: center;
-  margin-top: 10px;
 }
 
 .container {
@@ -75,314 +70,39 @@ h1 {
   padding: 10px;
 }
 
-/* Fim Header Style */
-
-.author-name {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 2em;
-  margin: 10px 0 10px 0;
+/* Introdução */
+.introducao {
+  width: 100%;
+  height: 400px;
+  background: url("img/aaron-burden-QJDzYT_K8Xg-unsplash.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 0;
 }
 
-.author-name::before {
-  content: "";
-  width: 5px;
-  height: 20px;
-  display: inline-block;
-  background: #0bd1d4;
-  margin-right: 10px;
-}
-
-.sobre {
-  grid-column: 2;
-  margin-left: 40px;
-}
-
-.sobre dt {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1.2em;
-  font-weight: 400;
-  margin-left: 10px;
-  margin-bottom: 20px;
-}
-
-.sobre dt::before {
-  content: "";
-  width: 20px;
-  height: 10px;
-  display: inline-block;
-  background: #8100f5;
-  margin-right: 10px;
-}
-
-.sobre dd {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 1em;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.js-according dd {
-  display: none;
-}
-
-.js-according dd.ativo {
-  display: block;
-}
-
-.js-according dt::after {
-  content: "▼";
-  margin-left: 10px;
-  color: #8100f5;
-}
-
-.js-according dt.ativo::after {
-  content: "▲";
-}
-
-.book-list {
-  margin-left: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.book-list li {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 0.9em;
-}
-
-.book-list li::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  background: #00f7cb;
-  display: inline-block;
-  border-radius: 50%;
-  margin-right: 5px;
-  border: 1px solid #000;
-}
-
-.js-according ul {
-  display: none;
-}
-
-.js-according ul.ativo {
-  display: block;
-}
-
-.js-according dd.ativo {
-  display: block;
-  animation: slideDown 0.5s forwards;
-}
-
-.js-according ul.ativo {
-  display: block;
-  animation: slideDown 1s forwards;
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    max-height: 0;
-  }
-  to {
-    opacity: 1;
-    max-height: 200px;
-  }
-}
-
-.death::before {
-  content: "✝";
-  margin-right: 10px;
-}
-body,
-h1,
-p,
-div h2,
-ul {
-  margin: 0;
-  padding: 0px;
-}
-section {
-  margin-top: 40px;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
-  width: 300px;
-  height: 300px;
-  border: 4px solid #000;
-}
-
-h1 {
+.title {
   font-size: 3em;
   font-family: "Atkinson Hyperlegible", sans-serif;
   text-align: center;
-  margin-top: 10px;
+  padding-top: 40px;
+  color: #fff;
+  padding-bottom: 20px;
 }
 
-.container {
-  width: 960px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-gap: 15px;
-}
-
-.author-name {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 2em;
-  margin: 10px 0 10px 0;
-}
-
-.author-name::before {
-  content: "";
-  width: 5px;
-  height: 20px;
-  display: inline-block;
-  background: #0bd1d4;
-  margin-right: 10px;
-}
-
-.sobre {
-  grid-column: 2;
-  margin-left: 40px;
-}
-
-.sobre dt {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1.2em;
-  font-weight: 400;
-  margin-left: 10px;
-  margin-bottom: 20px;
-}
-
-.sobre dt::before {
-  content: "";
-  width: 20px;
-  height: 10px;
-  display: inline-block;
-  background: #8100f5;
-  margin-right: 10px;
-}
-
-.sobre dd {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 1em;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.js-according dd {
-  display: none;
-}
-
-.js-according dd.ativo {
-  display: block;
-}
-
-.js-according dt::after {
-  content: "▼";
-  margin-left: 10px;
-  color: #8100f5;
-}
-
-.js-according dt.ativo::after {
-  content: "▲";
-}
-
-.book-list {
-  margin-left: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.book-list li {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 0.9em;
-}
-
-.book-list li::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  background: #00f7cb;
-  display: inline-block;
-  border-radius: 50%;
-  margin-right: 5px;
-  border: 1px solid #000;
-}
-
-.js-according ul {
-  display: none;
-}
-
-.js-according ul.ativo {
-  display: block;
-}
-
-.js-according dd.ativo {
-  display: block;
-  animation: slideDown 0.5s forwards;
-}
-
-.js-according ul.ativo {
-  display: block;
-  animation: slideDown 1s forwards;
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    max-height: 0;
-  }
-  to {
-    opacity: 1;
-    max-height: 200px;
-  }
-}
-
-.death::before {
-  content: "✝";
-  margin-right: 10px;
-}
-body,
-h1,
-p,
-div h2,
-ul {
-  margin: 0;
-  padding: 0px;
-}
-section {
-  margin-top: 40px;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
-  width: 300px;
-  height: 300px;
-  border: 4px solid #000;
-}
-
-h1 {
-  font-size: 3em;
-  font-family: "Atkinson Hyperlegible", sans-serif;
+.quote p {
   text-align: center;
-  margin-top: 10px;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
-.container {
-  width: 960px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-gap: 15px;
+.quote::before,
+.quote::after {
+  content: "";
+  height: 4px;
+  width: 160px;
+  display: block;
+  background: #8100f5;
+  margin: 9px auto;
 }
 
 .author-name {
@@ -427,6 +147,7 @@ h1 {
   font-size: 1em;
   margin-top: 10px;
   margin-bottom: 10px;
+  max-width: 200px;
 }
 
 .js-according dd {
@@ -502,157 +223,8 @@ h1 {
   content: "✝";
   margin-right: 10px;
 }
-body,
-h1,
-p,
-div h2,
-ul {
-  margin: 0;
-  padding: 0px;
-}
-section {
-  margin-top: 40px;
-}
 
-ul {
-  list-style: none;
-}
-
-img {
-  width: 300px;
-  height: 300px;
-  border: 4px solid #000;
-}
-
-h1 {
-  font-size: 3em;
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.container {
-  width: 960px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-gap: 15px;
-}
-
-.author-name {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 2em;
-  margin: 10px 0 10px 0;
-}
-
-.author-name::before {
-  content: "";
-  width: 5px;
-  height: 20px;
-  display: inline-block;
-  background: #0bd1d4;
-  margin-right: 10px;
-}
-
-.sobre {
-  grid-column: 2;
-  margin-left: 40px;
-}
-
-.sobre dt {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1.2em;
-  font-weight: 400;
-  margin-left: 10px;
-  margin-bottom: 20px;
-}
-
-.sobre dt::before {
-  content: "";
-  width: 20px;
-  height: 10px;
-  display: inline-block;
-  background: #8100f5;
-  margin-right: 10px;
-}
-
-.sobre dd {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 1em;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.js-according dd {
-  display: none;
-}
-
-.js-according dd.ativo {
-  display: block;
-}
-
-.js-according dt::after {
-  content: "▼";
-  margin-left: 10px;
-  color: #8100f5;
-}
-
-.js-according dt.ativo::after {
-  content: "▲";
-}
-
-.book-list {
-  margin-left: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.book-list li {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 0.9em;
-}
-
-.book-list li::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  background: #00f7cb;
-  display: inline-block;
-  border-radius: 50%;
-  margin-right: 5px;
-  border: 1px solid #000;
-}
-
-.js-according ul {
-  display: none;
-}
-
-.js-according ul.ativo {
-  display: block;
-}
-
-.js-according dd.ativo {
-  display: block;
-  animation: slideDown 0.5s forwards;
-}
-
-.js-according ul.ativo {
-  display: block;
-  animation: slideDown 1s forwards;
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    max-height: 0;
-  }
-  to {
-    opacity: 1;
-    max-height: 200px;
-  }
-}
-
-.death::before {
-  content: "✝";
-  margin-right: 10px;
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
 }
